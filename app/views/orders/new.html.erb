@@ -1,0 +1,35 @@
+<% if @order.errors.any? %>
+<h2>Please Follow instructions</h2>
+<ul>
+<% @order.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+<% end %>
+
+<p>
+<div class="well",>
+  
+<%= form_for :order, url: orders_path  do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :phone_number %>
+  <%= f.text_field :cake_size %>
+  <%= f.text_field :flavour %>
+  <%= f.text_field :delivery_or_pickup %>
+  <%= f.text_field :delivery_address %>
+  <%= f.text_field :d_phone_number %>
+  <%= f.text_field :amount %>
+  <%= f.text_field :paid %>
+  <%= f.text_field :balance %>
+  <%= f.date_field :date %>
+  <%= f.time_field :time %>
+  <%= f.file_field :image %>
+  <%= f.submit "Confirm order" %>
+</p>
+<% end %>
+
+
+  
+</div>
+  
+<p><%= link_to 'Cancel and Go back', root_path %></p>
