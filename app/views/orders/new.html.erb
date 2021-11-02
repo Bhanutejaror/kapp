@@ -10,7 +10,7 @@
 <p>
 <div class="well",>
   
-<%= form_for :order, url: orders_path  do |f| %>
+<%= form_with scope: :order, url: orders_path  do |f| %>
   <%= f.text_field :name %>
   <%= f.text_field :phone_number %>
   <%= f.text_field :cake_size %>

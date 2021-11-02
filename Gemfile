@@ -11,6 +11,7 @@ gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
+gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
@@ -28,7 +29,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bootstrap_form', '~> 2.3.0'
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
-
+gem 'bootstrap_form'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
