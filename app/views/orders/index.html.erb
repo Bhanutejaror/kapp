@@ -20,6 +20,7 @@
   </tr>
  
   <% @orders.each do |order| %>
+   
     <tr>
       <td><%= order.name %></td>
       <td><%= order.phone_number %></td>
@@ -35,6 +36,7 @@
       <td><%= order.time %></td>
       <td><%= order.image %></td>
       <td><%= link_to 'Details', order_path(order) %> </td>
+       <td> <%= link_to "Edit", edit_order_path(order), class: "btn btn-outline-info" %></td>
     </tr>
   <% end %>
 </table>

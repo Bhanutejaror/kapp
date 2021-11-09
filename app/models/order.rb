@@ -1,4 +1,5 @@
 class Order < ActiveRecord::Base
+	
 	validates :name, presence: :true
 	validates :phone_number, presence: :true, length: { is: 10 }
 	validates :cake_size, :date, presence: :true
