@@ -11,20 +11,20 @@
 <div class="well",>
   
 <%= form_with scope: :order, url: orders_path  do |f| %>
-  <%= f.text_field :name %>
-  <%= f.text_field :phone_number %>
-  <%= f.text_field :cake_size %>
-  <%= f.text_field :flavour %>
-  <%= f.text_field :delivery_or_pickup %>
-  <%= f.text_field :delivery_address %>
-  <%= f.text_field :d_phone_number %>
-  <%= f.text_field :amount %>
-  <%= f.text_field :paid %>
-  <%= f.text_field :balance %>
-  <%= f.text_field :date %>
-  <%= f.text_field :time %>
-  <%= f.file_field :image %>
-  <%= f.submit "Confirm order" %>
+  <b>Name</b><%= f.text_field :name %><br>
+  <b>Phone Number</b><%= f.text_field :phone_number %><br>
+  <b> Cake Quantity:</b><%= f.text_field :cake_size %><br>
+ <b> Flavour: </b><%= f.text_field :flavour %><br>
+ <b> Delivery/Pickup</b><%= f.text_field :delivery_or_pickup %><br>
+ <b> Delivery Address</b><%= f.text_field :delivery_address %><br>
+ <b> Delivery Phone number</b><%= f.text_field :d_phone_number %><br>
+ <b> Amount</b><%= f.text_field :amount %><br>
+ <b> Paid</b> <%= f.text_field :paid %><br>
+ <b> Balance</b> <%= f.text_field :balance %><br>
+ <b> Date </b><%= f.text_field :date %><br>
+ <b> Time</b><%= f.text_field :time %><br>
+ <b> Image </b><%= f.file_field :image %><br>
+  <%= f.submit "Confirm order" %><br>
 </p>
 <% end %>
 
