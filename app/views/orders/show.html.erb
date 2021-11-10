@@ -53,7 +53,7 @@
 </tr>
 <tr>
   <td><strong>Image</strong></td>
-  <td><%= @order.image %></td>
+  <td><%= image_tag(@order.image) if @order.image?  %></td>
 </tr>
 </table>
 </div>

@@ -18,6 +18,10 @@ gem 'railties', '~> 6.1.4.1'
 
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
+gem 'carrierwave'
+
+gem 'mini_magick'
+
 
 
 gem 'webpacker', '~> 5.0'
