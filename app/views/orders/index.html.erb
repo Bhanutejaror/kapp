@@ -34,7 +34,7 @@
       <td><%= order.balance %></td>
       <td><%= order.date %></td>
       <td><%= order.time %></td>
-      <td><%= order.image %></td>
+      <td><%= image_tag order.image.url, size: "100x100" %></td>
       <td><%= link_to 'Details', order_path(order) %> </td>
        <td> <%= link_to "Edit", edit_order_path(order), class: "btn btn-outline-info" %></td>
     </tr>

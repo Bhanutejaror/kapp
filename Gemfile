@@ -21,6 +21,7 @@ gem 'jquery-rails'
 gem 'carrierwave'
 
 gem 'mini_magick'
+gem 'fog-aws'
 
 
 
@@ -32,7 +33,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap_form'
 gem 'devise'
 gem 'devise-bootstrap-views'
-
+gem 'bootstrap-datepicker-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

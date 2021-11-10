@@ -52,7 +52,7 @@
         </div>
 
         <div class="form-group row">
-          <%= f.label :Phone_Number, class: "col-2 col-form-label text-light" %>
+          <%= f.label :delivery_address, class: "col-2 col-form-label text-light" %>
           <div class="col-5"> 
             <%= f.text_field :delivery_address,  class: "form-control shadow rounded", placeholder: "Delivery Adress" %>
           </div>
@@ -90,24 +90,25 @@
         <div class="form-group row">
           <%= f.label :Date, class: "col-2 col-form-label text-light" %>
           <div class="col-5"> 
-            <%= f.text_field :date,  class: "form-control shadow rounded", placeholder: "Date of Eventr" %>
-          </div>
+           <%= f.text_field :date,   class: "form-control shadow rounded", placeholder: "DD/MM/YYYY" %>
         </div>
+      </div>  
         
         <div class="form-group row">
           <%= f.label :Time_Slag, class: "col-2 col-form-label text-light" %>
           <div class="col-5"> 
-            <%= f.text_field :time,  class: "form-control shadow rounded", placeholder: "Time Slag" %>
+            <%= f.text_field :time,  class: "form-control shadow rounded", placeholder: "HH:MM" %>
           </div>
         </div>
         
 
         <div class="form-group row">
-          <%= f.label :Upload_Image, class: "col-2 col-form-label text-light" %>
+          <%= f.label :image, class: "col-2 col-form-label text-light" %>
           <div class="col-5"> 
-            <%= f.file_field :image, accept: 'image/jpg,image/jpg,image/png', class: "form-control shadow rounded", placeholder: "Image" %>
+            <%= f.file_field :image, accept: 'image/jpeg,image/jpg,image/png', class: "form-control shadow rounded" %>
           </div>
-          <%= error_span(@order[:image]) %>
+         
+          
         </div>
     
         

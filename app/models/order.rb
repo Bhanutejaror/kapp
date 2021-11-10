@@ -1,5 +1,5 @@
 class Order < ActiveRecord::Base
-	
+	#mount_uploader :image, ImageUploader
 	validates :name, presence: :true
 	validates :phone_number, presence: :true, length: { is: 10 }
 	validates :cake_size, :date, presence: :true
@@ -9,8 +9,10 @@ class Order < ActiveRecord::Base
 	validates :amount, presence: :true
 	validates :paid, presence: :true
 	validates :balance, presence: :true
-	validates :date, presence: :true
-	validates :time, presence: :true, uniqueness: true
+	validates :date, presence: :true, length: { is: 10 }
+	validates :time, presence: :true, length: { is: 5 }
 	validates :image, presence: :true
 	
+	mount_uploader :image, ImageUploader
+
 end
