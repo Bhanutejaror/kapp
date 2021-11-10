@@ -22,7 +22,7 @@ gem 'carrierwave-aws'
 
 gem 'mini_magick'
 gem 'fog-aws'
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk-ruby'
 
 
 gem 'webpacker', '~> 5.0'
