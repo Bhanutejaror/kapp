@@ -15,7 +15,7 @@ require("channels")
 //= require bootstrap-datepicker
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.en-GB.js
-//= require twitter/bootstrap
+
 
 import "bootstrap" 
 

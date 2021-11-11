@@ -15,12 +15,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
 gem 'railties', '~> 6.1.4.1'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'twitter-bootstrap-rails'
-gem 'devise-bootstrap-views'
-gem 'bootstrap', '~> 4.4.1'
+
+
 gem 'jquery-rails'
 gem 'carrierwave-aws'
-gem 'bootstrap-sass', '3.3.6'
+
 gem 'mini_magick'
 gem 'fog-aws'
 gem 'aws-sdk'
