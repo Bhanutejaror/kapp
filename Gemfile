@@ -21,7 +21,7 @@ gem 'jquery-rails'
 gem 'carrierwave-aws'
 
 gem 'mini_magick'
-gem 'fog'
+gem 'fog-aws'
 gem 'aws-sdk'
 gem 'figaro'
 gem 'capistrano'
@@ -38,6 +38,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 
+gem 'json', '2.3.1'
 
 gem 'bootstrap_form'
 gem 'devise'
