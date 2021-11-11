@@ -37,7 +37,7 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
-gem 'sdoc', '~> 0.4.0', group: :doc
+
 
 gem 'bootstrap_form'
 gem 'devise'
@@ -50,9 +50,9 @@ gem 'bootstrap-datepicker-rails'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'bootstrap_form', '~> 2.3.0'
 
-
+gem 'spring'
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+ gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
