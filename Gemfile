@@ -16,7 +16,7 @@ gem 'coffee-rails'
 gem 'railties', '~> 6.1.4.1'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 
-
+gem 'figaro'
 gem 'jquery-rails'
 gem 'carrierwave-aws'
 
