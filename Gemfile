@@ -22,7 +22,7 @@ gem 'carrierwave-aws'
 
 gem 'mini_magick'
 gem 'fog-aws'
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 3'
 gem 'figaro'
 gem 'capistrano'
 gem 'capistrano-bundler'
