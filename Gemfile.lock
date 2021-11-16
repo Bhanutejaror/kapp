@@ -1472,7 +1472,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  aws-sdk (~> 3)
+  aws-sdk
   bootsnap (>= 1.4.4)
   bootstrap-datepicker-rails
   bootstrap_form
