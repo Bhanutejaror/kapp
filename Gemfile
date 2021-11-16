@@ -23,6 +23,7 @@ gem 'carrierwave-aws'
 gem 'mini_magick'
 gem 'fog-aws'
 gem 'aws-sdk'
+
 gem 'capistrano'
 gem 'capistrano-bundler'
 gem 'capistrano-passenger', '>= 0.1.1'
