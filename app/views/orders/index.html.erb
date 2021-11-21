@@ -1,7 +1,9 @@
 <h1>All ORDERS </h1>
  
 <table class="table">
-  <tr>
+  <tr> 
+   <th>Date</th>
+    <th>Time</th>
     <th>Name</th>
     <th>Phone Number</th>
     <th>Cake Size</th>
@@ -12,8 +14,7 @@
      <th>Amount</th>
      <th>Paid</th>
      <th>Balance or COD</th>
-    <th>Date</th>
-    <th>Time</th>
+   
     <th>Image</th>
     
 
@@ -22,6 +23,8 @@
   <% @orders.each do |order| %>
    
     <tr>
+     <td><%= order.date %></td>
+      <td><%= order.time %></td>
       <td><%= order.name %></td>
       <td><%= order.phone_number %></td>
       <td><%= order.cake_size %></td>
@@ -32,8 +35,7 @@
       <td><%= order.amount %></td>
       <td><%= order.paid %></td>
       <td><%= order.balance %></td>
-      <td><%= order.date %></td>
-      <td><%= order.time %></td>
+      
       <td><%= image_tag order.image.url, size: "100x100" %></td>
       <td><%= link_to 'Details', order_path(order) %> </td>
        <td> <%= link_to "Edit", edit_order_path(order), class: "btn btn-outline-info" %></td>
