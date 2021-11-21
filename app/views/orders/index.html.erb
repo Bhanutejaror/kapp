@@ -1,0 +1,45 @@
+<h1>All ORDERS </h1>
+ 
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Phone Number</th>
+    <th>Cake Size</th>
+    <th>Flavour</th>
+     <th>Delivery or Pickup</th>
+     <th> If Delivery, Address:</th>
+     <th>Delivery Phone number</th>
+     <th>Amount</th>
+     <th>Paid</th>
+     <th>Balance or COD</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Image</th>
+    
+
+  </tr>
+ 
+  <% @orders.each do |order| %>
+   
+    <tr>
+      <td><%= order.name %></td>
+      <td><%= order.phone_number %></td>
+      <td><%= order.cake_size %></td>
+      <td><%= order.flavour %></td>
+      <td><%= order.delivery_or_pickup %></td>
+      <td><%= order.delivery_address %></td>
+      <td><%= order.d_phone_number %></td>
+      <td><%= order.amount %></td>
+      <td><%= order.paid %></td>
+      <td><%= order.balance %></td>
+      <td><%= order.date %></td>
+      <td><%= order.time %></td>
+      <td><%= image_tag order.image.url, size: "100x100" %></td>
+      <td><%= link_to 'Details', order_path(order) %> </td>
+       <td> <%= link_to "Edit", edit_order_path(order), class: "btn btn-outline-info" %></td>
+    </tr>
+  <% end %>
+</table>
+
+
+<%= link_to 'Back', root_path %>

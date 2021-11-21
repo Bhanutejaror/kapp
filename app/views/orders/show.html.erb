@@ -1,0 +1,62 @@
+<h1 align="center">order Details</h1>
+
+
+<table>
+<tr>
+  <td><strong>Name</strong></td>
+  <td><%= @order.name %></td>
+</tr>
+<tr>
+  <td><strong>Phone Number:</strong></td>
+  <td><%= @order.phone_number %></td>
+</tr>
+<tr>
+  <td><strong>Cake Size:</strong></td>
+  <td><%= @order.cake_size %></td>
+</tr>
+
+<tr>
+  <td><strong>Flavour:</strong></td>
+  <td><%= @order.flavour %></td>
+</tr>
+<tr>
+  <td><strong>Delivery Or Pickup:</strong></td>
+  <td><%= @order.delivery_or_pickup %></td>
+</tr>
+<tr>
+  <td><strong>If Delivery, Address:</strong></td>
+  <td><%= @order.delivery_address %></td>
+</tr>
+<tr>
+  <td><strong>Delviery Phone Number:</strong></td>
+  <td><%= @order.d_phone_number %></td>
+</tr>
+<tr>
+  <td><strong>Amount:</strong></td>
+  <td><%= @order.amount %></td>
+</tr>
+<tr>
+  <td><strong>paid:</strong></td>
+  <td><%= @order.paid %></td>
+</tr>
+<tr>
+  <td><strong>balance:</strong></td>
+  <td><%= @order.balance %></td>
+</tr>
+<tr>
+  <td><strong>Date:</strong></td>
+  <td><%= @order.date %></td>
+</tr>
+<tr>
+  <td><strong>Time:</strong></td>
+  <td><%= @order.time %></td>
+</tr>
+<tr>
+  <td><strong>Image</strong></td>
+  <td><%= image_tag(@order.image_url.to_s) %></td>
+</tr>
+</table>
+</div>
+
+
+<h4 align="center"><%= link_to 'View all orders', orders_path %> | <%= link_to 'Make New order' , new_order_path %></h4>
