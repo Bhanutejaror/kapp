@@ -9,8 +9,8 @@ class Order < ActiveRecord::Base
 	validates :amount, presence: :true
 	validates :paid, presence: :true
 	validates :balance, presence: :true
-	validates :date, presence: :true, length: { is: 10 }
-	validates :time, presence: :true, length: { is: 5 }
+	validates :date, presence: :true
+	validates :time, presence: :true
 	validates :image, presence: :true
 	
 	mount_uploader :image, ImageUploader
